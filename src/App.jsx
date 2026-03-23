@@ -512,11 +512,23 @@ export default function App() {
                 : "bg-white text-[#8b95a1]"
             }`}
           >
-            오늘은 마실래요 ☕
-          </button>
-        </div>
-      </div>
+           오늘은 마실래요 ☕️
+      </button>
     </div>
-  );
-}
+  </div>
 
+  {/* 광고/제휴 섹션: 후원 버튼 없이 이메일만 깔끔하게 남겼어요 */}
+  <footer className="w-full bg-gray-50 py-10 mt-12 border-t border-gray-100">
+    <div className="max-w-md mx-auto px-6 flex flex-col items-center gap-2">
+      <p className="text-xs text-gray-400 font-medium tracking-wider">[광고/제휴 문의]</p>
+      <a 
+        href="mailto:contact@yourdomain.com" 
+        className="text-sm text-gray-600 hover:text-blue-500 transition-colors underline decoration-gray-300 underline-offset-4"
+      >
+        y2s2@hanmail.net
+      </a>
+    </div>
+  </footer>
+</div>
+);
+}
