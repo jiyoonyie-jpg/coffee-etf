@@ -499,8 +499,8 @@ export default function App() {
             {!isLoaded
               ? "불러오는 중..."
               : todayStatus === "saved"
-              ? "오늘 절약 완료 ✔"
-              : "오늘 절약 완료"}
+              ? "오늘 절약 완료 💰"
+              : "오늘 절약 완료 💰"}
           </button>
 
           <button
