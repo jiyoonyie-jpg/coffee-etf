@@ -517,17 +517,23 @@ export default function App() {
     </div>
   </div>
 
- <footer className="w-full bg-[#f3f4f6] py-10 mt-4">
-  <div className="max-w-md mx-auto px-6 flex flex-col items-center gap-2">
-    {/* 광고/제휴 문의 클릭시 이메일 창 열기 */}
-    <p className="text-xs text-gray-400 font-medium tracking-wider">
-      <a 
-        href="mailto:y2s2@hanmail.net" 
-        className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
-      >
-        [광고/제휴 문의]
-      </a>
-    </p>
+ <footer className="w-full bg-[#f3f4f6] py-10 mt-5 border-t border-gray-100">
+  <div className="max-w-md mx-auto px-6 flex flex-col items-center gap-3">
+    {/* Contact Section: This is a single clickable block */}
+    <a 
+      href="mailto:y2s2@hanmail.net" 
+      className="flex flex-col items-center gap-1.5 group"
+    >
+      <span className="text-[10px] text-gray-400 font-medium tracking-wider uppercase">
+        Contact & Advertise
+      </span>
+      {/* Clickable text without showing email */}
+      <span className="text-sm text-gray-500 group-hover:text-blue-600 transition-colors font-semibold underline underline-offset-4 decoration-gray-300">
+        [광고/제휴 문의 ✉️] 
+      </span>
+    </a>
+    {/* Copyright text without showing name directly */}
+    <p className="text-[10px] text-gray-300 mt-2 italic">© 2026. All rights reserved.</p>
   </div>
 </footer>
 </div>
