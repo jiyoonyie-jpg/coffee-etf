@@ -517,17 +517,17 @@ export default function App() {
     </div>
   </div>
 
- <footer className="w-full bg-[#f3f4f6] py-6 mt-4">
+ <footer className="w-full bg-[#f3f4f6] py-10 mt-4">
   <div className="max-w-md mx-auto px-6 flex flex-col items-center gap-2">
+    {/* 광고/제휴 문의 클릭시 이메일 창 열기 */}
     <p className="text-xs text-gray-400 font-medium tracking-wider">
-      [광고/제휴 문의]
+      <a 
+        href="mailto:y2s2@hanmail.net" 
+        className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+      >
+        [광고/제휴 문의]
+      </a>
     </p>
-    <a 
-      href="mailto:contact@yourdomain.com" 
-      className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
-    >
-      y2s2@hanmail.net
-    </a>
   </div>
 </footer>
 </div>
